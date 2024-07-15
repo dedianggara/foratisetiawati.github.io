@@ -10,11 +10,7 @@
 
 <body class="bg-white">
 
-    <audio autoplay loop>
-        <source src="reality-club.mp3" type="audio/mpeg">
-        <source src="reality-club.ogg" type="audio/ogg">
-        Browser kamu tidak mendukung tag audio ini
-      </audio>
+
     <!-- Navbar -->
     <nav class="bg-black bg-opacity-70 fixed w-full text-black p-4">
         <div class="flex items-center justify-between">
@@ -51,6 +47,8 @@
         </div>
     </nav>
 
+
+
     <!-- Hero Section -->
     <section class="bg-cover bg-center h-screen text-white" style="background-image: url('src/img/love1.png')">
         <div class="flex items-center justify-center h-full bg-gray-900 bg-opacity-50">
@@ -58,11 +56,18 @@
                 <h1 id="typewriter" class="md:text-4xl mx-4 font-bold">When I first met you, I honestly didn't know
                     you were gonna be this important to me.</h1>
                 <p class="mt-4 text-sm">
-                   This is for you Ati Setiawati Permana (My Favorite Person).
+                    This is for you Ati Setiawati Permana (My Favorite Person).
                 </p>
                 <p class="mt-4 text-lg">
-                   You complete me!
+                    You complete me!
                 </p>
+
+                <button class="mt-12 bg-gray-600 bg-opacity-60 hover:bg-red-900  text-white font-semibold text-xs py-2 px-4 rounded-full" onclick="playAudio()">Klik disini cantik, biar ada backsound romantisnya!</button>
+                <audio id="audio" muted>
+                    <source src="reality-club.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+
             </div>
         </div>
     </section>
@@ -71,16 +76,17 @@
     <section id="about" class="container bg-gray-200 mx-auto px-4 py-8 text-center">
         <h2 class="text-2xl font-bold text-gray-800">Kata Pengantar</h2>
         <!-- <h2 class="text-1xl mt-4 text-left px-4 font-bold text-gray-800">Tentang Ati...</h2> -->
-       
+
         <div class=" px-4 gap-10 mt-4 text-center">
             <p>Pada sebuah garis waktu yang merangkak maju, akan ada saatnya kau bertemu
                 dengan satu orang yang mengubah hidupmu untuk selamanya. kemudian, satu orang tersebut
                 akan menjadi bagian terbesar dalam agendamu. Dan Hatimu takkan memberikan pilihan apa pun
                 kecuali jatuh cinta, biarpun logika terus berkata bahwa risiko dari jatuh cinta adalah
-                terjembab di dasar nestapa 
+                terjembab di dasar nestapa
             </p>
-            <p class="mt-4 font-semibold">(Dikutip dari Novel <span class="font-bold">"Garis Waktu"</span> by Fiersa Besari)</p>
-          </div>
+            <p class="mt-4 font-semibold">(Dikutip dari Novel <span class="font-bold">"Garis Waktu"</span> by Fiersa
+                Besari)</p>
+        </div>
     </section>
 
     <!-- About Us -->
@@ -90,9 +96,10 @@
         <div class=" px-4 mt-2 text-justify text-gray-100">
             <p>izinkan aku menulis tentangmu, dalam bentuk mengabadikan perjalanan kita,
                 agar aku tidak lupa bahwa kita sudah berjalan sejauh ini, dan sekuat tenaga menyatukan
-                perbedaan. perkenalan kita berawal dari biro jodoh (Sahabatmu Pimus). yup, seperti di halaman 
+                perbedaan. perkenalan kita berawal dari biro jodoh (Sahabatmu Pimus). yup, seperti di halaman
                 awal page ini "aku tidak pernah menyangka bahwa kamu akan menjadi penting bagiku". tak ada
-                niat untuk punya hubungan spesial denganmu kala itu. kita hanya berkirim pesan teks by <span class="italic font-semibold">"Whatsapp"</span>
+                niat untuk punya hubungan spesial denganmu kala itu. kita hanya berkirim pesan teks by <span
+                    class="italic font-semibold">"Whatsapp"</span>
                 . sangat sederhana bukan?
             </p>
         </div>
@@ -101,36 +108,48 @@
         <div class=" px-4 mt-2 text-justify text-gray-100">
             <p>
                 Setelah perkenalan kita kala itu, aku berharap semuanya kembali normal. kau dengan kesibukanmu,
-                dan aku kembali tenggelam dalam rutinitasku. sebelumnya hidupku sudah teramat tenang, dan aku tidak 
+                dan aku kembali tenggelam dalam rutinitasku. sebelumnya hidupku sudah teramat tenang, dan aku tidak
                 ingin secuil komunikasi denganmu membuatku merasakan seperti ada kupu-kupu terbang dalam perutku,
                 yang berdampak hilangnya fokus dan merusak rencanaku kedepannya.
             </p>
 
             <p class="mt-2 ">
-                Tapi siapa yang sangka? dalam hitungan minggu komunikasi kita semakin <span class="italic font-semibold">"Intens"</span>,
-                dan aku semakin antusias menunggu balasan pesan darimu. kau sangat baik dalam hal berkomunikasi, menjadi pendengar yang baik
+                Tapi siapa yang sangka? dalam hitungan minggu komunikasi kita semakin <span
+                    class="italic font-semibold">"Intens"</span>,
+                dan aku semakin antusias menunggu balasan pesan darimu. kau sangat baik dalam hal berkomunikasi, menjadi
+                pendengar yang baik
                 dan pemberi saran yang baik. oke, kali ini aku tidak bisa mengelak, sepertinya rasa nyaman
-                mulai tumbuh. bagaimana bisa aku nyaman dengan orang yang bahkan melihat batang hidungnya secara langsung saja aku tidak pernah.
-                aneh bukan? memang! dasar aku! 
+                mulai tumbuh. bagaimana bisa aku nyaman dengan orang yang bahkan melihat batang hidungnya secara
+                langsung saja aku tidak pernah.
+                aneh bukan? memang! dasar aku!
             </p>
 
             <p class="mt-2">
-                Kemudian tepat pada tanggal 14 Oktober 2023 kita bertemu, aku mengajakmu menonton bioskop kala itu, seperti biasa, bagiku lebih sulit
-                menentukan film apa yang mau ditonton daripada mengerjakan soal UTS saat kuliah. akhirnya kuserahkan kepadamu untuk mengambil
-                keputusan bijak itu. setelah berdiskusi dimeja bundar tanpa bersitegang sama sekali dan dengan pertimbangan yang matang, akhirnya
-                 <span class="font-semibold">"Booommmmmmm!"</span>, kau berhasil menentukan film yang akan kita tonton.
-                 <span class="font-semibold">"yaudah, nonton pamali dusun pocong aja ya"</span>, begitulah kira-kira kalimat yang keluar dari mulutmu.
+                Kemudian tepat pada tanggal 14 Oktober 2023 kita bertemu, aku mengajakmu menonton bioskop kala itu,
+                seperti biasa, bagiku lebih sulit
+                menentukan film apa yang mau ditonton daripada mengerjakan soal UTS saat kuliah. akhirnya kuserahkan
+                kepadamu untuk mengambil
+                keputusan bijak itu. setelah berdiskusi dimeja bundar tanpa bersitegang sama sekali dan dengan
+                pertimbangan yang matang, akhirnya
+                <span class="font-semibold">"Booommmmmmm!"</span>, kau berhasil menentukan film yang akan kita tonton.
+                <span class="font-semibold">"yaudah, nonton pamali dusun pocong aja ya"</span>, begitulah kira-kira
+                kalimat yang keluar dari mulutmu.
             </p>
 
             <p class="mt-2">
-               Dari pertemuan pertama kita saat itu, banyak hal yang masih terngiang-ngiang sampai sekarang, bagaimana tidak? aku ingat betul
-               bagaimana ekspresimu ketika hampir menabrak <span class="font-semibold">"Pintu Kaca Bioskop"</span> karena kacanya terlalu bening.
-              <span class="font-semibold"> "duhhhh, aku maluuuu sumpahhh!"</span>, sontak kalimat itu keluar dari mulutmu.
-              <span class="font-semibold">"ehh santai-santai gapapa, aman tenang gaada yang liat kok wkwk"</span>, jawabku singkat menenangkan.
+                Dari pertemuan pertama kita saat itu, banyak hal yang masih terngiang-ngiang sampai sekarang, bagaimana
+                tidak? aku ingat betul
+                bagaimana ekspresimu ketika hampir menabrak <span class="font-semibold">"Pintu Kaca Bioskop"</span>
+                karena kacanya terlalu bening.
+                <span class="font-semibold"> "duhhhh, aku maluuuu sumpahhh!"</span>, sontak kalimat itu keluar dari
+                mulutmu.
+                <span class="font-semibold">"ehh santai-santai gapapa, aman tenang gaada yang liat kok wkwk"</span>,
+                jawabku singkat menenangkan.
             </p>
 
             <p class="mt-2">
-                sepertinya kau juga tidak akan lupa bagaimana sebagian <span class="italic font-semibold">Popcorn</span>-ku terbang, karena reflek kagetku
+                sepertinya kau juga tidak akan lupa bagaimana sebagian <span
+                    class="italic font-semibold">Popcorn</span>-ku terbang, karena reflek kagetku
                 melihat pocong yang tiba-tiba muncul diatas pelapon pos ronda di film itu.
             </p>
         </div>
@@ -138,11 +157,16 @@
         <h2 class="text-sm mt-6 text-left px-4 font-semibold text-gray-100 underline">Memulai Kisah</h2>
         <div class=" px-4 mt-2 text-justify text-gray-100">
             <p>
-                Semenjak perjumpaan kita kala itu, aku merasakan ada sesuatu yang tumbuh diam-diam. hangat sikapmu mampu mencairkan isi kepalaku yang sempat membeku.
-                manakala ku ingat pertemuan itu, aku tahu bahwa aku sudah jatuh hati kepadamu. ku kira letak kebahagiaan berada di balik kaki langit dan harus ku
-                tempuh untuk menggapainya. Namun, sebelum itu aku sudah menemukannya sekarang. <span class=" italic font-semibold">"Akan tiba saatnya kita temukan alasan 
-                paling tepat untuk berjuang. jika telah tiba, genggam erat. Sesuatu yang istimewa takkan datang dua kali"</span> Dan disinilah aku, tepat tanggal 21 Oktober 2023
-                memutuskan untuk berterus terang  mengenai segala yang terpendam selama ini. dan aku sudah sangat siap dengan apapun jawabanmu. aku sudah tidak mau lagi sembunyi-sembunyi
+                Semenjak perjumpaan kita kala itu, aku merasakan ada sesuatu yang tumbuh diam-diam. hangat sikapmu mampu
+                mencairkan isi kepalaku yang sempat membeku.
+                manakala ku ingat pertemuan itu, aku tahu bahwa aku sudah jatuh hati kepadamu. ku kira letak kebahagiaan
+                berada di balik kaki langit dan harus ku
+                tempuh untuk menggapainya. Namun, sebelum itu aku sudah menemukannya sekarang. <span
+                    class=" italic font-semibold">"Akan tiba saatnya kita temukan alasan
+                    paling tepat untuk berjuang. jika telah tiba, genggam erat. Sesuatu yang istimewa takkan datang dua
+                    kali"</span> Dan disinilah aku, tepat tanggal 21 Oktober 2023
+                memutuskan untuk berterus terang mengenai segala yang terpendam selama ini. dan aku sudah sangat siap
+                dengan apapun jawabanmu. aku sudah tidak mau lagi sembunyi-sembunyi
                 memikirkanmu.
             </p>
 
@@ -151,9 +175,13 @@
         <h2 class="text-sm mt-6 text-left px-4 font-bold text-gray-100 underline">Komitmen</h2>
         <div class=" px-4 mt-2 text-justify text-gray-100">
             <p>
-                Seperti ucapmu diawal, kita sudah sepakat untuk tidak lagi bermain-main dalam menjalin hubungan, rasanya kita sudah cukup dewasa untuk berkomitmen ke-jenjang yang lebih jauh
-                <span class="font-semibold">(Pernikahan)</span>. seiring berjalannya waktu kita semakin mengenal satu sama lain, saling mengerti kekurangan masing-masing dan berusaha
-                 untuk saling melengkapi. percayalah aku berusaha sangat keras dalam komitmen dan impian pernikahan kita, karena menatap matamu saja aku merasa siap untuk melewati kehidupan selanjutnya. Doakan aku agar sehat selalu ya. 
+                Seperti ucapmu diawal, kita sudah sepakat untuk tidak lagi bermain-main dalam menjalin hubungan, rasanya
+                kita sudah cukup dewasa untuk berkomitmen ke-jenjang yang lebih jauh
+                <span class="font-semibold">(Pernikahan)</span>. seiring berjalannya waktu kita semakin mengenal satu
+                sama lain, saling mengerti kekurangan masing-masing dan berusaha
+                untuk saling melengkapi. percayalah aku berusaha sangat keras dalam komitmen dan impian pernikahan kita,
+                karena menatap matamu saja aku merasa siap untuk melewati kehidupan selanjutnya. Doakan aku agar sehat
+                selalu ya.
             </p>
 
         </div>
@@ -165,9 +193,12 @@
         <h2 class="text-sm mt-6 text-left px-4 font-bold text-gray-800 underline">Tentang Kamu</h2>
         <div class=" px-4 mt-2 text-justify">
             <p>
-                Kamu adalah lambang kecantikan yang mempesona bagiku, seorang gadis bernama Ati Setiawati Permana. Matanya teduh, membuatku ingin selalu berada dibawahnya.
-                sikapnya yang hangat dan kelembutan yang ia punya seperti takkan pernah pudar. dia seorang gadis yang mandiri, yang tangguh dan berani mengambil alih kendali hidupnya sendiri
-                Dia adalah contoh nyata bahwa seorang wanita bisa menjadi kuat dan mandiri tanpa mengorbankan kelembutannya.
+                Kamu adalah lambang kecantikan yang mempesona bagiku, seorang gadis bernama Ati Setiawati Permana.
+                Matanya teduh, membuatku ingin selalu berada dibawahnya.
+                sikapnya yang hangat dan kelembutan yang ia punya seperti takkan pernah pudar. dia seorang gadis yang
+                mandiri, yang tangguh dan berani mengambil alih kendali hidupnya sendiri
+                Dia adalah contoh nyata bahwa seorang wanita bisa menjadi kuat dan mandiri tanpa mengorbankan
+                kelembutannya.
                 Aku merasa sangat beruntung bisa mengenalmu.
             </p>
         </div>
@@ -179,8 +210,7 @@
             <h2 class="text-3xl font-bold text-gray-800 text-center">Memories</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="src/img/datefirst-1.jpeg" alt="Book 1"
-                        class="w-full h-30 object-cover" />
+                    <img src="src/img/datefirst-1.jpeg" alt="Book 1" class="w-full h-30 object-cover" />
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800">Coffee Date</h3>
                         <p class="text-gray-600 mt-2">
@@ -191,8 +221,7 @@
                 </div>
 
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="src/img/datefirst-2.jpeg" alt="Book 1"
-                        class="w-full h-30 object-cover" />
+                    <img src="src/img/datefirst-2.jpeg" alt="Book 1" class="w-full h-30 object-cover" />
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800">Coffee Date</h3>
                         <p class="text-gray-600 mt-2">
@@ -202,8 +231,7 @@
                 </div>
 
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="src/img/burger-1.jpeg" alt="Book 1"
-                        class="w-full h-72 object-cover" />
+                    <img src="src/img/burger-1.jpeg" alt="Book 1" class="w-full h-72 object-cover" />
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800">Burger Date</h3>
                         <p class="text-gray-600 mt-2">
@@ -213,8 +241,7 @@
                 </div>
 
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="src/img/candid-burger.jpeg" alt="Book 1"
-                        class="w-full h-30 object-cover" />
+                    <img src="src/img/candid-burger.jpeg" alt="Book 1" class="w-full h-30 object-cover" />
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800">Burger Date</h3>
                         <p class="text-gray-600 mt-2">
@@ -224,8 +251,7 @@
                 </div>
 
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="src/img/burger-2.jpeg" alt="Book 1"
-                        class="w-full h-30 object-cover" />
+                    <img src="src/img/burger-2.jpeg" alt="Book 1" class="w-full h-30 object-cover" />
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800">Burger Date</h3>
                         <p class="text-gray-600 mt-2">
@@ -235,8 +261,7 @@
                 </div>
 
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="src/img/badminton.jpeg" alt="Book 1"
-                        class="w-full h-30 object-cover" />
+                    <img src="src/img/badminton.jpeg" alt="Book 1" class="w-full h-30 object-cover" />
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800">Badminton Date</h3>
                         <p class="text-gray-600 mt-2">
@@ -246,8 +271,7 @@
                 </div>
 
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="src/img/movie.jpeg" alt="Book 1"
-                        class="w-full h-30 object-cover" />
+                    <img src="src/img/movie.jpeg" alt="Book 1" class="w-full h-30 object-cover" />
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800">Movie Date</h3>
                         <p class="text-gray-600 mt-2">
@@ -257,8 +281,7 @@
                 </div>
 
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="src/img/home-1.jpeg" alt="Book 1"
-                        class="w-full h-60 object-cover" />
+                    <img src="src/img/home-1.jpeg" alt="Book 1" class="w-full h-60 object-cover" />
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800">Home Date</h3>
                         <p class="text-gray-600 mt-2">
@@ -267,18 +290,16 @@
                     </div>
                 </div>
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="src/img/home-2.jpeg" alt="Book 1"
-                        class="w-full h-30 object-cover" />
+                    <img src="src/img/home-2.jpeg" alt="Book 1" class="w-full h-30 object-cover" />
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800">Home Date</h3>
                         <p class="text-gray-600 mt-2">
-                           Sehabis teraweh, baru sikat ngemil lagi yaaaaa.
+                            Sehabis teraweh, baru sikat ngemil lagi yaaaaa.
                         </p>
                     </div>
                 </div>
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="src/img/home-3.jpeg" alt="Book 1"
-                        class="w-full h-30 object-cover" />
+                    <img src="src/img/home-3.jpeg" alt="Book 1" class="w-full h-30 object-cover" />
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800">Home Date</h3>
                         <p class="text-gray-600 mt-2">
@@ -288,8 +309,7 @@
                 </div>
 
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="src/img/bogor-1.jpeg" alt="Book 1"
-                        class="w-full h-30 object-cover" />
+                    <img src="src/img/bogor-1.jpeg" alt="Book 1" class="w-full h-30 object-cover" />
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800">Kebun Raya Date</h3>
                         <p class="text-gray-600 mt-2">
@@ -298,8 +318,7 @@
                     </div>
                 </div>
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="src/img/bogor-2.jpeg" alt="Book 1"
-                        class="w-full h-30 object-cover" />
+                    <img src="src/img/bogor-2.jpeg" alt="Book 1" class="w-full h-30 object-cover" />
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800">Kebun Raya Date</h3>
                         <p class="text-gray-600 mt-2">
@@ -308,8 +327,7 @@
                     </div>
                 </div>
                 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                    <img src="src/img/bogor-3.jpeg" alt="Book 1"
-                        class="w-full h-30 object-cover" />
+                    <img src="src/img/bogor-3.jpeg" alt="Book 1" class="w-full h-30 object-cover" />
                     <div class="p-6">
                         <h3 class="text-xl font-semibold text-gray-800">Kebun Raya Date</h3>
                         <p class="text-gray-600 mt-2">
@@ -352,8 +370,8 @@
     </footer>
 
     <!-- JavaScript for Toggle -->
-     <script src="script.js"></script>
-    
+    <script src="script.js"></script>
+
     <script>
         // JavaScript to toggle mobile menu visibility
         const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
@@ -362,6 +380,12 @@
         mobileMenuToggle.addEventListener("click", () => {
             mobileMenu.classList.toggle("hidden");
         });
+
+        function playAudio() {
+            var audio = document.getElementById('audio');
+            audio.muted = false;
+            audio.play();
+        }
     </script>
 </body>
 
